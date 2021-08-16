@@ -1,5 +1,7 @@
 import React from "react";
+import ProjectOwlApi from "./ProjectOwlApi";
 import ProjectVaultBot from "./ProjectVaultBot";
+import './Projects.css'
 
 function Projects () {
   return (
@@ -10,6 +12,7 @@ function Projects () {
       <hr 
         className='project-break'
       />
+      <ProjectOwlApi />
     </section>
   )
 }

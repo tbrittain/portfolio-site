@@ -31,3 +31,8 @@ a {
   color: $color-primary;
   text-decoration: none;
 }
+
+a:hover {
+  color: $color-secondary;
+  transition: 0.7s;
+}

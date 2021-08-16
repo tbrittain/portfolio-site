@@ -2,6 +2,7 @@ import React from "react";
 import awsIcon from '../Assets/Icons/aws.png'
 import dockerIcon from '../Assets/Icons/docker.png'
 import googleCloudIcon from '../Assets/Icons/googlecloud.png'
+import graphQLIcon from '../Assets/Icons/graphql.png'
 import javascriptIcon from '../Assets/Icons/javascript.png'
 import postgresIcon from '../Assets/Icons/postgres.png'
 import pythonIcon from '../Assets/Icons/python.png'
@@ -12,6 +13,7 @@ export enum Skill {
   aws = 'aws',
   docker = 'docker',
   googlecloud = 'googlecloud',
+  graphql = 'graphql',
   javascript = 'javascript',
   postgres = 'postgres',
   python = 'python',
@@ -51,6 +53,12 @@ function Banner (props: BannerProps) {
       content.image = googleCloudIcon
       content.alt = 'Google Cloud icon'
       content.color = '#FFFFFF'
+      break
+    case 'graphql':
+      content.name = 'GraphQL'
+      content.image = graphQLIcon
+      content.alt = 'GraphQL icon'
+      content.color = '#000'
       break
     case 'javascript':
       content.name = 'JavaScript'

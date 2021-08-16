@@ -43,6 +43,8 @@ function Project (props: ProjectProps) {
         >
           <a
             href={props.link}
+            target='_blank'
+            rel='noopener noreferrer'
           >
             View source on GitHub ↗
           </a>

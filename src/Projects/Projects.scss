@@ -1,5 +1,10 @@
 @import '../index.scss';
 
+.projects {
+  height: 100vh;
+}
+
 .project-break {
   color: $color-secondary;
+  margin: 20px;
 }
