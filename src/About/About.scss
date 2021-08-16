@@ -1,11 +1,11 @@
-@import '../index.scss';
+@use '../abstracts/' as a;
 
 .about {
   height: 100vh;
 }
 
 .horizontal-bar {
-  color: $color-tertiary;
+  color: a.$color-tertiary;
 }
 
 .about-carousel-container {
@@ -15,6 +15,5 @@
 }
 
 .about p {
-  margin-top: 7px;
-  text-align: justify;
+  @include a.paragraph-formatting;
 }

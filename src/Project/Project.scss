@@ -1,4 +1,4 @@
-@import '../index.scss';
+@use '../abstracts/' as a;
 
 .project-container {
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .project-title {
-  color: $color-primary;
+  color: a.$color-primary;
   font-size: 3ch;
   user-select: none;
 }
@@ -33,8 +33,7 @@
 }
 
 .project-info p {
-  margin-top: 7px;
-  text-align: justify;
+  @include a.paragraph-formatting;
 }
 
 .project-link {

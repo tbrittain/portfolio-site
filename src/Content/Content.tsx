@@ -7,7 +7,7 @@ import './Content.css';
 
 function Content () {
   return (
-    <div
+    <main
       className='content-container'
     >
       <CustomScrollbar
@@ -15,7 +15,7 @@ function Content () {
         <About />
         <Projects />
       </CustomScrollbar>
-    </div>
+    </main>
   )
 }
 

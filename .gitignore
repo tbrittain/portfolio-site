@@ -12,6 +12,7 @@
 /build
 *.css
 *.css.map
+.vscode
 
 # misc
 .DS_Store

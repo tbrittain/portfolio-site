@@ -1,4 +1,4 @@
-@import '../index.scss';
+@use '../abstracts/' as *;
 
 .app {
   width: 100vw;

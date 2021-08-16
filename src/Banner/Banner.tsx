@@ -1,12 +1,12 @@
 import React from "react";
-import awsIcon from '../Assets/Icons/aws.png'
-import dockerIcon from '../Assets/Icons/docker.png'
-import googleCloudIcon from '../Assets/Icons/googlecloud.png'
-import graphQLIcon from '../Assets/Icons/graphql.png'
-import javascriptIcon from '../Assets/Icons/javascript.png'
-import postgresIcon from '../Assets/Icons/postgres.png'
-import pythonIcon from '../Assets/Icons/python.png'
-import typescriptIcon from '../Assets/Icons/typescript.png'
+import awsIcon from '../Assets/DarkIcons/aws.png'
+import dockerIcon from '../Assets/DarkIcons/docker.png'
+import googleCloudIcon from '../Assets/DarkIcons/googlecloud.png'
+import graphQLIcon from '../Assets/DarkIcons/graphql.png'
+import javascriptIcon from '../Assets/DarkIcons/javascript.png'
+import postgresIcon from '../Assets/DarkIcons/postgres.png'
+import pythonIcon from '../Assets/DarkIcons/python.png'
+import typescriptIcon from '../Assets/DarkIcons/typescript.png'
 import './Banner.css'
 
 export enum Skill {
@@ -89,9 +89,6 @@ function Banner (props: BannerProps) {
   return (
     <div
       className='banner'
-      style={{
-        backgroundColor: content.color
-      }}
     >
       <img
         className='banner-icon'

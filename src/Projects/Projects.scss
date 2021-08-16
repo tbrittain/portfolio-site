@@ -1,10 +1,10 @@
-@import '../index.scss';
+@use '../abstracts/' as a;
 
 .projects {
   height: 100vh;
 }
 
 .project-break {
-  color: $color-secondary;
+  color: a.$color-secondary;
   margin: 20px;
 }

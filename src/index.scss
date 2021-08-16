@@ -1,3 +1,4 @@
+@use './abstracts/' as a;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
 
 * {
@@ -8,19 +9,14 @@
   scroll-behavior: smooth;
 }
 
-// Color palette
-$color-primary: #EE6C4D;
-$color-secondary: #F38D68;
-$color-tertiary: #AEFFD8;
-$color-dark: #020202;
-$color-light: #EFF0D1;
+// Global rules
 
 hr {
-  color: $color-tertiary;
+  color: a.$color-tertiary;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: $color-light;
+  color: a.$color-light;
 }
 
 h1, h2 {
@@ -28,11 +24,11 @@ h1, h2 {
 }
 
 a {
-  color: $color-primary;
+  color: a.$color-primary;
   text-decoration: none;
 }
 
 a:hover {
-  color: $color-secondary;
+  color: a.$color-secondary;
   transition: 0.7s;
 }

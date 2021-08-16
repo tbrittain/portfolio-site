@@ -1,4 +1,4 @@
-@import '../index.scss';
+@use '../abstracts/' as a;
 
 .banner {
   border-radius: 10px;
@@ -7,13 +7,13 @@
   align-items: center;
   justify-content: center;
   margin: 5px;
-  border: 2px inset $color-light;
+  border: 2.5px inset #FFF;
+  background-color: a.$color-light;
 }
 
 .banner-icon {
   width: 20px;
   height: 20px;
-  box-shadow: 0px 0px 3px rgb(80, 80, 80);
   margin-left: 5px;
   user-select: none;
 }
@@ -24,4 +24,5 @@
   font-weight: 700;
   user-select: none;
   mix-blend-mode: exclusion;
+  font-size: 0.75rem;
 }

@@ -1,4 +1,4 @@
-@import '../index.scss';
+@use '../abstracts/' as a;
 
 .carousel-container {
   text-align: center;
@@ -12,6 +12,6 @@
 .image-label {
   text-align: center;
   font-weight: 100;
-  color: $color-tertiary;
+  color: a.$color-tertiary;
   user-select: none;
 }
