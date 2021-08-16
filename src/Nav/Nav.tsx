@@ -7,11 +7,18 @@ interface NavProps {
 
 function Nav (props: NavProps) {
   return (
-    <nav className='nav'>
-      <a href='#about'>about</a>
-      <a href='#projects'>projects</a>
-      <a href='#contact'>contact</a>
-    </nav>
+    <>
+      <h1
+        className='title'
+      >
+        Trey Brittain
+      </h1>
+      <nav className='nav'>
+        <a href='#about'>about</a>
+        <a href='#projects'>projects</a>
+        <a href='#contact'>contact</a>
+      </nav>
+    </>
   )
 }
 

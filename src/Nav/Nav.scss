@@ -1,12 +1,12 @@
 @import '../index.scss';
 
 .nav {
-  color: $color-light;
   display: flex;
   flex-direction: column;
 }
 
-a {
-  color: $color-primary;
-  text-decoration: none;
+.title {
+  font-size: 2ch;
+  white-space: nowrap;
+  margin-bottom: 5px;
 }

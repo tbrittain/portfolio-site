@@ -6,11 +6,12 @@
 }
 
 .carousel-root {
-  width: 75%
+  width: 75%;
 }
 
 .image-label {
   text-align: center;
   font-weight: 100;
-  color: $color-tertiary
+  color: $color-tertiary;
+  user-select: none;
 }

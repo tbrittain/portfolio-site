@@ -12,9 +12,7 @@ function App() {
             currentAnchor='test'
           />
         </div>
-        <div className='content-container'>
-          <Content />
-        </div>
+        <Content />
       </div>
     </body>
   );

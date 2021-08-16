@@ -14,3 +14,20 @@ $color-secondary: #F38D68;
 $color-tertiary: #AEFFD8;
 $color-dark: #020202;
 $color-light: #EFF0D1;
+
+hr {
+  color: $color-tertiary;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $color-light;
+}
+
+h1, h2 {
+  user-select: none;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
