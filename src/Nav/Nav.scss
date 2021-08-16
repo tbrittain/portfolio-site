@@ -1,0 +1,12 @@
+@import '../index.scss';
+
+.nav {
+  color: $color-light;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
