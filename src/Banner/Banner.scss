@@ -1,0 +1,24 @@
+.banner {
+  border-radius: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.banner-icon {
+  width: 20px;
+  height: 20px;
+  box-shadow: 0px 0px 3px rgb(80, 80, 80);
+  margin-left: 5px;
+  user-select: none;
+}
+
+.banner-text {
+  padding: 5px;
+  margin: auto;
+  font-weight: 700;
+  user-select: none;
+  mix-blend-mode: exclusion;
+}

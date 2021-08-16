@@ -1,0 +1,43 @@
+@import '../index.scss';
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.project-title {
+  color: $color-primary;
+  font-size: 4ch;
+  user-select: none;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.project-image {
+  width: 64px;
+  height: 64px;
+  margin-right: 5px;
+  user-select: none;
+}
+
+.project-info p {
+  margin-top: 7px;
+  text-align: justify;
+}
+
+.project-link {
+  text-align: center;
+  margin-top: 5px;
+}

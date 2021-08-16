@@ -33,11 +33,18 @@ function ImageCarousel (props: { images: ImageCarouselProps }) {
             />
             {
               image.label &&
-              <p
-                className='image-label'
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}
               >
-                {image.label}
-              </p>
+                <p
+                  className='image-label'
+                >
+                  {image.label}
+                </p>
+              </div>
             }
           </div>
         ))
