@@ -1,0 +1,16 @@
+@import '../index.scss';
+
+.carousel-container {
+  text-align: center;
+  margin: auto;
+}
+
+.carousel-root {
+  width: 75%
+}
+
+.image-label {
+  text-align: center;
+  font-weight: 100;
+  color: $color-tertiary
+}
