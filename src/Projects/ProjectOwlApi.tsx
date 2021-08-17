@@ -22,7 +22,7 @@ function ProjectOwlApi () {
       <div>
         <p>
           I created a REST and GraphQL API using publicly-available data from the Overwatch League (OWL) e-sports results.
-          Its primary use is to be able to query individual player and team results from historical matches.
+          Its primary use is to query individual player and team results from historical matches.
         </p>
         <p>
           The REST and GraphQL APIs run on two separate Express servers, and the endpoints exposed by the REST API

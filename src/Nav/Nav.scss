@@ -11,6 +11,10 @@
   flex-direction: column;
 }
 
+.nav a {
+  user-select: none;
+}
+
 .title {
   font-size: 2ch;
   white-space: nowrap;

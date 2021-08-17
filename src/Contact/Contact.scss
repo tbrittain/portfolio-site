@@ -10,4 +10,15 @@
 
 ul {
   list-style-type: circle;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+li img {
+  width: 2ch;
 }
