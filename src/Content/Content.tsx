@@ -1,20 +1,31 @@
 import React from "react";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-// import { Scrollbars } from 'react-custom-scrollbars-2';
-import CustomScrollbar from "../CustomScrollbar/CustomScrollbar";
 import './Content.css';
+import Contact from "../Contact/Contact";
+import ScrollProgressBar from "../ScrollProgressBar/ScrollProgressBar";
 
 function Content () {
   return (
     <main
       className='content-container'
     >
-      <CustomScrollbar
+      <ScrollProgressBar />
+      <section
+        className='about'
       >
         <About />
+      </section>
+      <section
+        className='projects'
+      >
         <Projects />
-      </CustomScrollbar>
+      </section>
+      <section
+        className='contact'
+      >
+        <Contact />
+      </section>
     </main>
   )
 }

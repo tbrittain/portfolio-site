@@ -7,11 +7,9 @@ function App() {
   return (
     <body className="app">
       <div className='app-container'>
-        <div className='nav-container'>
-          <Nav
-            currentAnchor='test'
-          />
-        </div>
+        <Nav
+          currentAnchor='test'
+        />
         <Content />
       </div>
     </body>

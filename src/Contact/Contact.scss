@@ -1,0 +1,13 @@
+@use '../abstracts/' as a;
+
+.contact-container {
+  width: 100%;
+}
+
+.contact p {
+  @include a.paragraph-formatting;
+}
+
+ul {
+  list-style-type: circle;
+}

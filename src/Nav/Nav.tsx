@@ -7,7 +7,9 @@ interface NavProps {
 
 function Nav (props: NavProps) {
   return (
-    <>
+    <div
+      className='nav-container'
+    >
       <h1
         className='title'
       >
@@ -18,7 +20,7 @@ function Nav (props: NavProps) {
         <a href='#projects'>projects</a>
         <a href='#contact'>contact</a>
       </nav>
-    </>
+    </div>
   )
 }
 

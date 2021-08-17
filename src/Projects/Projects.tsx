@@ -5,7 +5,7 @@ import './Projects.css'
 
 function Projects () {
   return (
-    <section className='projects'>
+    <div>
       <h2 id='projects'>projects</h2>
       <hr />
       <ProjectVaultBot />
@@ -13,7 +13,7 @@ function Projects () {
         className='project-break'
       />
       <ProjectOwlApi />
-    </section>
+    </div>
   )
 }
 

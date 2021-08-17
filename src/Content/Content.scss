@@ -1,5 +1,14 @@
 .content-container {
-  height: 80vh;
-  padding-left: 5%;
   width: 100vw;
+  width: 80%;
+  float: right;
+}
+
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

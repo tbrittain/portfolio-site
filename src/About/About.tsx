@@ -25,7 +25,11 @@ const aboutImages: ImageCarouselProps = [
 
 function About () {
   return (
-    <section className='about'>
+    <div
+      style={{
+        margin: 'auto'
+      }}
+    >
       <div>
         <h2 id='about'>about</h2>
         <hr/>
@@ -55,7 +59,7 @@ function About () {
           images={aboutImages}
         />
       </div>
-    </section>
+    </div>
   )
 }
 

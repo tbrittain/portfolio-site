@@ -15,7 +15,7 @@ hr {
   color: a.$color-tertiary;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li {
   color: a.$color-light;
 }
 
@@ -30,5 +30,9 @@ a {
 
 a:hover {
   color: a.$color-secondary;
-  transition: 0.7s;
+  transition: 0.3s;
+}
+
+html {
+  background-color: a.$color-dark;
 }

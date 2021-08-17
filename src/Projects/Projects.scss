@@ -1,9 +1,5 @@
 @use '../abstracts/' as a;
 
-.projects {
-  height: 100vh;
-}
-
 .project-break {
   color: a.$color-secondary;
   margin: 20px;
