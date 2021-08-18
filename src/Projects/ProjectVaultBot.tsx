@@ -34,7 +34,7 @@ function ProjectVaultBot () {
           songs are kept in there for two weeks, and then they are purged from the playlist.
         </p>
         <p>
-          That was the original scope of the project, but it has since become a much more robust project. I migrated the Discord bot 
+          That was the original scope of the project, but it has since become much more robust. I migrated the Discord bot 
           and database to Google Cloud and implemented a GraphQL endpoint and React frontend to display information on all of the 
           cool things VaultBot has tracked over time. You can check that out&nbsp;
           <a

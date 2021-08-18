@@ -1,7 +1,7 @@
-@use '../abstracts/' as a;
+@use '../abstracts/' as *;
 
 .horizontal-bar {
-  color: a.$color-tertiary;
+  color: $color-tertiary;
 }
 
 .about-carousel-container {
@@ -11,5 +11,22 @@
 }
 
 .about p {
-  @include a.paragraph-formatting;
+  @include paragraph-formatting;
+}
+
+.about-expand {
+  border: none;
+  background-color: $color-dark;
+  cursor: pointer;
+  margin: auto;
+}
+
+.about-expand p {
+  font-family: 'IBM Plex Mono', monospace;
+  color: $color-primary;
+}
+
+.collapse-css-transition {
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import './About.css';
+import Collapse from '@kunukn/react-collapse'
 import ImageCarousel, { ImageCarouselProps } from "../ImageCarousel/ImageCarousel";
 import image1 from '../Assets/1.jpg';
 import image2 from '../Assets/2.jpg';
@@ -24,6 +25,7 @@ const aboutImages: ImageCarouselProps = [
 ]
 
 function About () {
+  const [open, setOpen] = useState(false)
   return (
     <div
       style={{
@@ -38,27 +40,47 @@ function About () {
           My languages of choice are TypeScript/JavaScript and Python, but I also have some experience working
           with Java, C#, and R.
         </p>
-        <p>
-          I graduated from the University of St. Thomas in Houston, Texas in the Spring of 2021 with a BS in Cell & Molecular Biology.
-          During my undergraduate, my work in research laboratories focusing in bioinformatics led to me discovering a passion for programming.
-        </p>
-        <p>
-          For frontend development, I primarily use React (but I am also interested in working with other frameworks such as Vue and Angular).
-          For backend development, I have experience working with Express, but I am progressively learning ASP.NET as well.
-          Using Express, I have created both traditional REST APIs as well as GraphQL APIs using Apollo GraphQL.
-        </p>
-        <p>
-          In my free time, I enjoy listening to and thinking about music, cycling, following baseball (and sabermetrics),
-          taking in the great outdoors, and occasionally playing video games.
-        </p>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center'
+          }}
+        >
+          <button
+            className='about-expand'
+            onClick={() => setOpen(!open)}
+          >
+            <p>
+              {open ? 'less' : 'more'}
+            </p>
+          </button>
+        </div>
+        <Collapse
+          isOpen={open}
+        >
+          <p>
+            I graduated from the University of St. Thomas in Houston, Texas in the Spring of 2021 with a BS in Cell & Molecular Biology.
+            During my undergraduate, my work in research laboratories focusing in bioinformatics led to me discovering a passion for programming.
+          </p>
+          <p>
+            For frontend development, I primarily use React (but I am also interested in working with other frameworks such as Vue and Angular).
+            For backend development, I have experience working with Express, but I am progressively learning ASP.NET as well.
+            Using Express, I have created both traditional REST APIs as well as GraphQL APIs using Apollo GraphQL.
+          </p>
+          <p>
+            In my free time, I enjoy listening to and thinking about music, cycling, following baseball (and sabermetrics),
+            taking in the great outdoors, and occasionally playing video games.
+          </p>
+          <div
+            className='about-carousel-container'
+          >
+            <ImageCarousel
+              images={aboutImages}
+            />
+          </div>
+        </Collapse>
       </div>
-      <div
-        className='about-carousel-container'
-      >
-        <ImageCarousel
-          images={aboutImages}
-        />
-      </div>
+
     </div>
   )
 }

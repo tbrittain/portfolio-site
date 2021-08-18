@@ -29,10 +29,10 @@ function ProjectHackathon () {
           the user wished to purchase.
         </p>
         <p>
-          When a Lex keyword was used, a request was sent to our serverless backend, which took the form of
-          several Python Lambda functions. Depending on the query, products or categories were pulled from
-          the DynamoDB by the respective Lambda function and a response was sent back to Lex, which displayed
-          the product information to the user.
+          When a Lex keyword was entered by the user, a request was sent to our serverless backend, which took
+           the form of several Python Lambda functions. Depending on the query, products or categories were 
+           pulled from the DynamoDB by the respective Lambda function and a response was sent back to Lex, 
+           which displayed the product information to the user.
         </p>
         <p>
           We received 3rd place in the hackathon for this project.
