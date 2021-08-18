@@ -1,28 +1,31 @@
-@use '../abstracts/' as a;
+@use '../abstracts/' as *;
 
 .project-container {
   display: flex;
   flex-direction: column;
+  border: 1.25px solid $color-primary;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .project-details {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 10px;
+  padding: 10px;
+  border-bottom: 1.25px solid $color-primary;
 }
 
 .project-title {
-  color: a.$color-primary;
+  color: $color-primary;
   font-size: 3ch;
   user-select: none;
+  text-align: center;
 }
 
 .project-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
 }
 
 .project-image {
@@ -33,10 +36,32 @@
 }
 
 .project-info p {
-  @include a.paragraph-formatting;
+  @include paragraph-formatting;
+  padding: 0 20px;
 }
 
 .project-link {
   text-align: center;
   margin-top: 5px;
 }
+
+.project-expand {
+  margin-left: auto;
+  font-size: 3.5ch;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $color-dark;
+  color: $color-primary;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collapse-css-transition {
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+

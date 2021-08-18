@@ -1,5 +1,6 @@
-@use './abstracts/' as a;
+@use './abstracts/' as *;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -12,11 +13,11 @@
 // Global rules
 
 hr {
-  color: a.$color-tertiary;
+  color: $color-tertiary;
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
-  color: a.$color-light;
+  color: $color-light;
 }
 
 h1, h2 {
@@ -24,15 +25,16 @@ h1, h2 {
 }
 
 a {
-  color: a.$color-primary;
+  color: $color-primary;
   text-decoration: none;
+  font-family: 'IBM Plex Mono';
 }
 
 a:hover {
-  color: a.$color-secondary;
+  text-decoration: underline dotted $color-secondary;
   transition: 0.3s;
 }
 
 html {
-  background-color: a.$color-dark;
+  background-color: $color-dark;
 }

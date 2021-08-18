@@ -17,12 +17,13 @@ function Contact () {
             src={emailIcon}
             alt='e-mail icon'
           />
+          &nbsp;
           <a
             href='mailto:trey@tbrittain.com'
             target='_blank'
             rel='noopener noreferrer'
           >
-            &nbsp;email
+            email
           </a>
         </li>
         <li>
@@ -30,12 +31,13 @@ function Contact () {
             src={githubIcon}
             alt='GitHub icon'
           />
+          &nbsp;
           <a
             href='https://github.com/tbrittain'
             target='_blank'
             rel='noopener noreferrer'
           >
-            &nbsp;tbrittain
+            tbrittain
           </a>
         </li>
         <li>
@@ -43,24 +45,15 @@ function Contact () {
             src={linkedInIcon}
             alt='LinkedIn icon'
           />
+          &nbsp;
           <a
             href='https://www.linkedin.com/in/tbritt/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            &nbsp;tbritt
+            tbritt
           </a>
         </li>
-        {/* <li>
-          resume:&nbsp;
-          <a
-            href={require('../Assets/Documents/resume.pdf')}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            download
-          </a>
-        </li> */}
       </ul>
     </div>
   )

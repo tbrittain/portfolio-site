@@ -1,11 +1,11 @@
-@use '../abstracts/' as a;
+@use '../abstracts/' as *;
 
 .contact-container {
   width: 100%;
 }
 
 .contact p {
-  @include a.paragraph-formatting;
+  @include paragraph-formatting;
 }
 
 ul {

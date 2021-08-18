@@ -6,6 +6,7 @@ import graphQLIcon from '../Assets/DarkIcons/graphql.png'
 import javascriptIcon from '../Assets/DarkIcons/javascript.png'
 import postgresIcon from '../Assets/DarkIcons/postgres.png'
 import pythonIcon from '../Assets/DarkIcons/python.png'
+import seleniumIcon from '../Assets/DarkIcons/selenium.png'
 import typescriptIcon from '../Assets/DarkIcons/typescript.png'
 import './Banner.css'
 
@@ -17,6 +18,7 @@ export enum Skill {
   javascript = 'javascript',
   postgres = 'postgres',
   python = 'python',
+  selenium = 'selenium',
   typescript = 'typescript'
 }
 
@@ -40,49 +42,46 @@ function Banner (props: BannerProps) {
       content.name = 'AWS'
       content.image = awsIcon
       content.alt = 'AWS icon'
-      content.color = '#FE9903'
       break
     case 'docker':
       content.name = 'Docker'
       content.image = dockerIcon
       content.alt = 'Docker icon'
-      content.color = '#2396ED'
       break
     case 'googlecloud':
       content.name = 'Google Cloud'
       content.image = googleCloudIcon
       content.alt = 'Google Cloud icon'
-      content.color = '#FFFFFF'
       break
     case 'graphql':
       content.name = 'GraphQL'
       content.image = graphQLIcon
       content.alt = 'GraphQL icon'
-      content.color = '#000'
       break
     case 'javascript':
       content.name = 'JavaScript'
       content.image = javascriptIcon
       content.alt = 'JavaScript icon'
-      content.color = '#F0DB4E'
       break
     case 'postgres':
       content.name = 'PostgreSQL'
       content.image = postgresIcon
       content.alt = 'PostgreSQL icon'
-      content.color = '#336791'
       break
     case 'python':
       content.name = 'Python'
       content.image = pythonIcon
       content.alt = 'Python icon'
-      content.color = '#3770A0'
+      break
+    case 'selenium':
+      content.name = 'Selenium'
+      content.image = seleniumIcon
+      content.alt = 'Selenium icon'
       break
     case 'typescript':
       content.name = 'TypeScript'
       content.image = typescriptIcon
       content.alt = 'TypeScript icon'
-      content.color = '#007ACD'
       break
   }
 

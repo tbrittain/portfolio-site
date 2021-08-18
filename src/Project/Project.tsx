@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "../Banner/Banner";
 import { Skill } from "../Banner/Banner";
+import Collapse from '@kunukn/react-collapse'
 import './Project.css'
 
 type Skills = Skill[]
@@ -15,7 +16,9 @@ interface ProjectProps {
 }
 
 function Project (props: ProjectProps) {
+  const [open, setOpen] = useState(false)
   const { name, image, imageAlt, skills, children } = props
+
   return (
     <div
       className='project-container'
@@ -33,23 +36,35 @@ function Project (props: ProjectProps) {
         >
           {name}
         </h3>
-      </div>
-      <div className='project-info'>
-        {children}
-      </div>
-      {props.link &&
-        <div
-          className='project-link'
+        <button
+          className='project-expand'
+          onClick={() => setOpen(!open)}
         >
-          <a
-            href={props.link}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            View source on GitHub ↗
-          </a>
-        </div>
-      }
+          {open ? '–' : '+'}
+        </button>
+      </div>
+      <Collapse
+        isOpen={open}
+      >
+        <>
+          <div className='project-info'>
+            {children}
+          </div>
+          {props.link &&
+            <div
+              className='project-link'
+            >
+              <a
+                href={props.link}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                View source on GitHub ↗
+              </a>
+            </div>
+          }
+        </>
+      </Collapse>
       <div
         className='project-skills'
       >

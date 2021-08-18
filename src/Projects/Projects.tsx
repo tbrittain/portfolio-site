@@ -2,17 +2,20 @@ import React from "react";
 import ProjectOwlApi from "./ProjectOwlApi";
 import ProjectVaultBot from "./ProjectVaultBot";
 import './Projects.css'
+import ProjectHackathon from "./ProjectHackathon";
 
 function Projects () {
   return (
-    <div>
+    <div
+      style={{
+        width: '100%'
+      }}
+    >
       <h2 id='projects'>projects</h2>
       <hr />
       <ProjectVaultBot />
-      <hr 
-        className='project-break'
-      />
       <ProjectOwlApi />
+      <ProjectHackathon />
     </div>
   )
 }

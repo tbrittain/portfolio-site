@@ -42,8 +42,8 @@ function ProjectVaultBot () {
             target='_blank'
             rel='noopener noreferrer'
           >
-            here.
-          </a>
+            here
+          </a>.
         </p>
       </div>
     </Project>
