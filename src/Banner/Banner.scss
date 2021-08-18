@@ -1,4 +1,4 @@
-@use '../abstracts/' as a;
+@use '../abstracts/' as *;
 
 .banner {
   border-radius: 10px;
@@ -7,8 +7,12 @@
   align-items: center;
   justify-content: center;
   margin: 5px;
-  border: 2.5px inset #FFF;
-  background-color: a.$color-light;
+  border: 1px inset #FFF;
+  background-color: $color-light;
+
+  @include sm {
+    margin: 1px;
+  }
 }
 
 .banner-icon {

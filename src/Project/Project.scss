@@ -7,6 +7,10 @@
   border-radius: 5px;
   margin-top: 20px;
   box-shadow: 4px 4px $color-secondary;
+
+  @include sm {
+    margin-top: 8px;
+  }
 }
 
 .project-details {
@@ -14,19 +18,31 @@
   align-items: center;
   padding: 10px;
   border-bottom: 1.25px solid $color-primary;
+
+  @include sm {
+    padding: 2px;
+  }
 }
 
 .project-title {
   color: $color-primary;
   font-size: 3ch;
   user-select: none;
-  text-align: center;
+
+  @include sm {
+    font-size: 1.5ch;
+  }
 }
 
 .project-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 10px;
+
+  @include sm {
+    margin: 7.5px;
+  }
 }
 
 .project-image {
@@ -34,6 +50,11 @@
   height: 64px;
   margin-right: 5px;
   user-select: none;
+
+  @include sm {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .project-info p {
@@ -59,6 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .collapse-css-transition {

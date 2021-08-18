@@ -1,6 +1,6 @@
-@use '../abstracts/' as a;
+@use '../abstracts/' as *;
 
 .project-break {
-  color: a.$color-secondary;
+  color: $color-secondary;
   margin: 20px;
 }

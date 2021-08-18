@@ -15,6 +15,9 @@
 
 hr {
   color: $color-tertiary;
+  background-color: $color-tertiary;
+  height: 1px;
+  border: none;
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
@@ -37,11 +40,11 @@ a {
   color: $color-primary;
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
-}
 
-a:hover {
-  text-decoration: underline dotted $color-secondary;
-  transition: 0.3s;
+  &:hover {
+    text-decoration: underline dotted $color-secondary;
+    transition: 0.3s;
+  }
 }
 
 html {

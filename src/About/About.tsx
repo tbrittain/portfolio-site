@@ -27,13 +27,9 @@ const aboutImages: ImageCarouselProps = [
 function About () {
   const [open, setOpen] = useState(false)
   return (
-    <div
-      style={{
-        margin: 'auto'
-      }}
-    >
+    <>
       <div>
-        <h2 id='about'>about</h2>
+        <h2>about</h2>
         <hr/>
         <p>
           My name is Trey Brittain and I am an aspiring Full Stack Developer based in Houston, Texas. 
@@ -80,8 +76,7 @@ function About () {
           </div>
         </Collapse>
       </div>
-
-    </div>
+    </>
   )
 }
 

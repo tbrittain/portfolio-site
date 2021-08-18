@@ -6,17 +6,13 @@ import ProjectHackathon from "./ProjectHackathon";
 
 function Projects () {
   return (
-    <div
-      style={{
-        width: '100%'
-      }}
-    >
-      <h2 id='projects'>projects</h2>
+    <>
+      <h2>projects</h2>
       <hr />
       <ProjectVaultBot />
       <ProjectOwlApi />
       <ProjectHackathon />
-    </div>
+    </>
   )
 }
 

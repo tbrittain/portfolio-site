@@ -13,18 +13,33 @@ function Content () {
       <ScrollProgressBar />
       <section
         className='about'
+        id='about'
       >
-        <About />
+        <div
+          className='section-container'
+        >
+          <About />
+        </div>
       </section>
       <section
         className='projects'
+        id='projects'
       >
-        <Projects />
+        <div
+          className='section-container'
+        >
+          <Projects />
+        </div>
       </section>
       <section
         className='contact'
+        id='contact'
       >
-        <Contact />
+        <div
+          className='section-container'
+        >
+          <Contact />
+        </div>
       </section>
     </main>
   )
