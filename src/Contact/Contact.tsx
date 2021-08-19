@@ -1,5 +1,5 @@
 import React from "react";
-import './Contact.css'
+import './Contact.scss'
 import emailIcon from '../Assets/Icons/email.png'
 import linkedInIcon from '../Assets/Icons/linkedin.png'
 import githubIcon from '../Assets/Icons/github.png'

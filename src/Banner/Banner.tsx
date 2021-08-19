@@ -8,7 +8,7 @@ import postgresIcon from '../Assets/DarkIcons/postgres.png'
 import pythonIcon from '../Assets/DarkIcons/python.png'
 import seleniumIcon from '../Assets/DarkIcons/selenium.png'
 import typescriptIcon from '../Assets/DarkIcons/typescript.png'
-import './Banner.css'
+import './Banner.scss'
 
 export enum Skill {
   aws = 'aws',

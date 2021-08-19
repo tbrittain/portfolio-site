@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectOwlApi from "./ProjectOwlApi";
 import ProjectVaultBot from "./ProjectVaultBot";
-import './Projects.css'
+import './Projects.scss'
 import ProjectHackathon from "./ProjectHackathon";
 
 function Projects () {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Banner from "../Banner/Banner";
 import { Skill } from "../Banner/Banner";
 import Collapse from '@kunukn/react-collapse'
-import './Project.css'
+import './Project.scss'
 
 type Skills = Skill[]
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './About.css';
+import './About.scss';
 import Collapse from '@kunukn/react-collapse'
 import ImageCarousel, { ImageCarouselProps } from "../ImageCarousel/ImageCarousel";
 import image1 from '../Assets/1.jpg';

@@ -1,7 +1,7 @@
 import React from "react";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-import './Content.css';
+import './Content.scss';
 import Contact from "../Contact/Contact";
 import ScrollProgressBar from "../ScrollProgressBar/ScrollProgressBar";
 

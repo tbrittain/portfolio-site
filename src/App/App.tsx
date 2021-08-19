@@ -1,7 +1,7 @@
 import React from 'react';
 import Content from '../Content/Content';
 import Nav from '../Nav/Nav';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
