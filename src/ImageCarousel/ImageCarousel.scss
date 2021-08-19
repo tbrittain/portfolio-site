@@ -1,4 +1,4 @@
-@use '../abstracts/' as a;
+@use '../abstracts/' as *;
 
 .carousel-container {
   text-align: center;
@@ -7,12 +7,16 @@
 
 .carousel-root {
   width: 75%;
+
+  @include sm {
+    width: 100%;
+  }
 }
 
 .image-label {
   text-align: center;
   font-weight: 100;
-  color: a.$color-tertiary;
+  color: $color-tertiary;
   user-select: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: small;

@@ -19,13 +19,17 @@
   &::-webkit-scrollbar-thumb {
     background: $color-tertiary;
   }
+
+  @include sm {
+    scroll-snap-type: y proximity;
+  }
 }
 
 .app-container {
   width: 70%;
   margin: auto auto;
 
-  @include sm {
+  @include xl {
     width: auto;
     margin: 0;
   }

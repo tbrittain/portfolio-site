@@ -7,9 +7,7 @@ function App() {
   return (
     <body className="app">
       <div className='app-container'>
-        <Nav
-          currentAnchor='test'
-        />
+        <Nav />
         <Content />
       </div>
     </body>
