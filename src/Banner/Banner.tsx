@@ -1,24 +1,32 @@
 import React from "react";
 import awsIcon from '../Assets/DarkIcons/aws.png'
 import dockerIcon from '../Assets/DarkIcons/docker.png'
+import electronIcon from '../Assets/DarkIcons/electron.png'
 import googleCloudIcon from '../Assets/DarkIcons/googlecloud.png'
 import graphQLIcon from '../Assets/DarkIcons/graphql.png'
 import javascriptIcon from '../Assets/DarkIcons/javascript.png'
 import postgresIcon from '../Assets/DarkIcons/postgres.png'
 import pythonIcon from '../Assets/DarkIcons/python.png'
 import seleniumIcon from '../Assets/DarkIcons/selenium.png'
+import serverlessIcon from '../Assets/DarkIcons/serverless.png'
+import sqliteIcon from '../Assets/DarkIcons/sqlite.png'
+import svelteIcon from '../Assets/DarkIcons/svelte.png'
 import typescriptIcon from '../Assets/DarkIcons/typescript.png'
 import './Banner.scss'
 
 export enum Skill {
   aws = 'aws',
   docker = 'docker',
+  electron = 'electron',
   googlecloud = 'googlecloud',
   graphql = 'graphql',
   javascript = 'javascript',
   postgres = 'postgres',
   python = 'python',
   selenium = 'selenium',
+  serverless = 'serverless',
+  sqlite = 'sqlite',
+  svelte = 'svelte',
   typescript = 'typescript'
 }
 
@@ -27,15 +35,15 @@ interface BannerProps {
 }
 
 interface BannerContent {
-  name?: string,
-  image?: string,
-  alt?: string,
+  name?: string
+  image?: string
+  alt?: string
   color?: string
 }
 
-function Banner (props: BannerProps) {
+function Banner (props: BannerProps): JSX.Element {
   const { skill } = props
-  let content: BannerContent = {}
+  const content: BannerContent = {}
 
   switch (skill) {
     case 'aws':
@@ -47,6 +55,11 @@ function Banner (props: BannerProps) {
       content.name = 'Docker'
       content.image = dockerIcon
       content.alt = 'Docker icon'
+      break
+    case 'electron':
+      content.name = 'Electron'
+      content.image = electronIcon
+      content.alt = 'Electron icon'
       break
     case 'googlecloud':
       content.name = 'Google Cloud'
@@ -77,6 +90,21 @@ function Banner (props: BannerProps) {
       content.name = 'Selenium'
       content.image = seleniumIcon
       content.alt = 'Selenium icon'
+      break
+    case 'serverless':
+      content.name = 'Serverless'
+      content.image = serverlessIcon
+      content.alt = 'Serverless Framework icon'
+      break
+    case 'sqlite':
+      content.name = 'SQLite'
+      content.image = sqliteIcon
+      content.alt = 'SQLite icon'
+      break
+    case 'svelte':
+      content.name = 'Svelte'
+      content.image = svelteIcon
+      content.alt = 'Svelte icon'
       break
     case 'typescript':
       content.name = 'TypeScript'

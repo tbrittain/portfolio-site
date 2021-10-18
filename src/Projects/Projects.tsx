@@ -1,16 +1,18 @@
 import React from "react";
-import ProjectOwlApi from "./ProjectOwlApi";
 import ProjectVaultBot from "./ProjectVaultBot";
-import './Projects.scss'
 import ProjectHackathon from "./ProjectHackathon";
+import ProjectBingeable from "./ProjectBingeable";
+import ProjectFranchiseUtility from './ProjectFranchiseUtility'
+import './Projects.scss'
 
-function Projects () {
+function Projects (): JSX.Element {
   return (
     <>
       <h2>projects</h2>
       <hr />
+      <ProjectBingeable />
       <ProjectVaultBot />
-      <ProjectOwlApi />
+      <ProjectFranchiseUtility />
       <ProjectHackathon />
     </>
   )
