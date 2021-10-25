@@ -34,7 +34,7 @@ function About () {
         <p>
           My name is Trey Brittain and I am an aspiring Full Stack Developer based in Houston, Texas. 
           My languages of choice are TypeScript/JavaScript and Python, but I also have some experience working
-          with Java, C#, and R.
+          with Java, Go, and R.
         </p>
         <div
           style={{
@@ -60,7 +60,7 @@ function About () {
           </p>
           <p>
             For frontend development, I primarily use React (but I am also interested in working with other frameworks such as Vue and Angular).
-            For backend development, I have experience working with Express, but I am progressively learning ASP.NET as well.
+            For backend development, I have experience working with Express, but I am progressively learning backend frameworks for Go as well.
             Using Express, I have created both traditional REST APIs as well as GraphQL APIs using Apollo GraphQL.
           </p>
           <p>
