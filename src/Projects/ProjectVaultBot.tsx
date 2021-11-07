@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 import vaultBotLogo from '../Assets/vaultbot.png'
-import Project from "../Project/Project";
+import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
 function ProjectVaultBot () {
@@ -34,8 +34,8 @@ function ProjectVaultBot () {
           songs are kept in there for two weeks, and then they are purged from the playlist.
         </p>
         <p>
-          That was the original scope of the project, but it has since become much more robust. I migrated the Discord bot 
-          and database to Google Cloud and implemented a GraphQL endpoint and React frontend to display information on all of the 
+          That was the original scope of the project, but it has since become much more robust. I migrated the Discord bot
+          and database to Google Cloud and implemented a GraphQL endpoint and React frontend to display information on all of the
           cool things VaultBot has tracked over time. You can check that out&nbsp;
           <a
             href='https://vaultbot.tbrittain.com/'

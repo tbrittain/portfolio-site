@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import Banner from "../Banner/Banner";
-import { Skill } from "../Banner/Banner";
+import React, { useState } from 'react'
+import Banner, { Skill } from '../Banner/Banner'
+
 import Collapse from '@kunukn/react-collapse'
 import './Project.scss'
 
 type Skills = Skill[]
 
 interface ProjectProps {
-  name: string,
-  image: string,
-  imageAlt: string,
-  children: JSX.Element,
-  skills: Skills,
+  name: string
+  image: string
+  imageAlt: string
+  children: JSX.Element
+  skills: Skills
   link?: string
 }
 
@@ -61,8 +61,7 @@ function Project (props: ProjectProps) {
               >
                 View source on GitHub ↗
               </a>
-            </div>
-          }
+            </div>}
         </>
       </Collapse>
       <div

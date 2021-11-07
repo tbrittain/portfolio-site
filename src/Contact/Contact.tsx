@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import './Contact.scss'
 import emailIcon from '../Assets/Icons/email.png'
 import linkedInIcon from '../Assets/Icons/linkedin.png'

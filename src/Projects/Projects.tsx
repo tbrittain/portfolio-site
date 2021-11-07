@@ -1,8 +1,6 @@
-import React from "react";
-import ProjectVaultBot from "./ProjectVaultBot";
-import ProjectHackathon from "./ProjectHackathon";
-import ProjectBingeable from "./ProjectBingeable";
-import ProjectFranchiseUtility from './ProjectFranchiseUtility'
+import React from 'react'
+import ProjectVaultBot from './ProjectVaultBot'
+import ProjectHackathon from './ProjectHackathon'
 import './Projects.scss'
 
 function Projects (): JSX.Element {
@@ -10,9 +8,7 @@ function Projects (): JSX.Element {
     <>
       <h2>projects</h2>
       <hr />
-      <ProjectBingeable />
       <ProjectVaultBot />
-      <ProjectFranchiseUtility />
       <ProjectHackathon />
     </>
   )

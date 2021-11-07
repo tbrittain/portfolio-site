@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 import crawlerLogo from '../Assets/crawler.png'
-import Project from "../Project/Project";
+import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
 function ProjectCrawler () {
@@ -17,9 +17,7 @@ function ProjectCrawler () {
       link='https://github.com/tbrittain/newegg-crawler'
     >
       <div>
-        <p>
-          
-        </p>
+        <p />
       </div>
     </Project>
   )

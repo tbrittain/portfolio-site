@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import './About.scss';
+import React, { useState } from 'react'
+import './About.scss'
 import Collapse from '@kunukn/react-collapse'
-import ImageCarousel, { ImageCarouselProps } from "../ImageCarousel/ImageCarousel";
-import image1 from '../Assets/1.jpg';
-import image2 from '../Assets/2.jpg';
-import image3 from '../Assets/3.jpg';
+import ImageCarousel, { ImageCarouselProps } from '../ImageCarousel/ImageCarousel'
+import image1 from '../Assets/1.jpg'
+import image2 from '../Assets/2.jpg'
+import image3 from '../Assets/3.jpg'
 
 const aboutImages: ImageCarouselProps = [
   {
@@ -24,15 +24,15 @@ const aboutImages: ImageCarouselProps = [
   }
 ]
 
-function About () {
+function About (): JSX.Element {
   const [open, setOpen] = useState(false)
   return (
     <>
       <div>
         <h2>about</h2>
-        <hr/>
+        <hr />
         <p>
-          My name is Trey Brittain and I am an aspiring Full Stack Developer based in Houston, Texas. 
+          My name is Trey Brittain and I am a Junior Software Developer at Entrance Consulting in Houston, Texas.
           My languages of choice are TypeScript/JavaScript and Python, but I also have some experience working
           with Java, Go, and R.
         </p>
@@ -59,8 +59,8 @@ function About () {
             During my undergraduate, my work in research laboratories focusing in bioinformatics led to me discovering a passion for programming.
           </p>
           <p>
-            For frontend development, I primarily use React (but I am also interested in working with other frameworks such as Vue and Angular).
-            For backend development, I have experience working with Express, but I am progressively learning backend frameworks for Go as well.
+            For frontend development, I primarily use React and Svelte (but I am also interested in working with other frameworks such as Vue).
+            For backend development, I have experience working with Express, but I am progressively learning backend frameworks for Go and .NET.
             Using Express, I have created both traditional REST APIs as well as GraphQL APIs using Apollo GraphQL.
           </p>
           <p>

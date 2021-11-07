@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import awsIcon from '../Assets/DarkIcons/aws.png'
 import dockerIcon from '../Assets/DarkIcons/docker.png'
 import electronIcon from '../Assets/DarkIcons/electron.png'

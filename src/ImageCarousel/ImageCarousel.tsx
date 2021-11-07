@@ -1,11 +1,11 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import React from 'react'
+import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
+import { Carousel } from 'react-responsive-carousel'
 import './ImageCarousel.scss'
 
 interface ImageDetails {
-  img: string,
-  alt: string,
+  img: string
+  alt: string
   label?: string
 }
 
@@ -14,11 +14,11 @@ export type ImageCarouselProps = ImageDetails[]
 function ImageCarousel (props: { images: ImageCarouselProps }) {
   return (
     <Carousel
-      autoPlay={true}
-      infiniteLoop={true}
+      autoPlay
+      infiniteLoop
       interval={7000}
       showThumbs={false}
-      centerMode={true}
+      centerMode
       showIndicators={false}
       showStatus={false}
     >
@@ -33,18 +33,18 @@ function ImageCarousel (props: { images: ImageCarouselProps }) {
             />
             {
               image.label &&
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}
-              >
-                <p
-                  className='image-label'
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center'
+                  }}
                 >
-                  {image.label}
-                </p>
-              </div>
+                  <p
+                    className='image-label'
+                  >
+                    {image.label}
+                  </p>
+                </div>
             }
           </div>
         ))

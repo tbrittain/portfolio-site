@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 import owlLogo from '../Assets/owl.png'
-import Project from "../Project/Project";
+import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
 function ProjectOwlApi () {
