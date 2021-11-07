@@ -4,7 +4,7 @@ import Collapse from '@kunukn/react-collapse'
 import ImageCarousel, { ImageCarouselProps } from '../ImageCarousel/ImageCarousel'
 import image1 from '../Assets/1.jpg'
 import image2 from '../Assets/2.jpg'
-import image3 from '../Assets/3.jpg'
+import image4 from '../Assets/4.jpg'
 
 const aboutImages: ImageCarouselProps = [
   {
@@ -18,9 +18,9 @@ const aboutImages: ImageCarouselProps = [
     label: 'San Juan Mountains near Silverton, Colorado'
   },
   {
-    img: image3,
-    alt: 'Trey posing near a valley of the San Juan Mountains near Durango, Colorado',
-    label: 'Near Durango, Colorado'
+    img: image4,
+    alt: 'Trey and Lauren posing near a lagoon in Apalachicola, Florida',
+    label: 'Near Apalachicola, Florida'
   }
 ]
 
@@ -34,7 +34,7 @@ function About (): JSX.Element {
         <p>
           My name is Trey Brittain and I am a Junior Software Developer at Entrance Consulting in Houston, Texas.
           My languages of choice are TypeScript/JavaScript and Python, but I also have some experience working
-          with Java, Go, and R.
+          with Go, C#, and R.
         </p>
         <div
           style={{
@@ -60,7 +60,7 @@ function About (): JSX.Element {
           </p>
           <p>
             For frontend development, I primarily use React and Svelte (but I am also interested in working with other frameworks such as Vue).
-            For backend development, I have experience working with Express, but I am progressively learning backend frameworks for Go and .NET.
+            For backend development, I have experience working with Express, but I am progressively learning backend frameworks for Go and ASP.NET.
             Using Express, I have created both traditional REST APIs as well as GraphQL APIs using Apollo GraphQL.
           </p>
           <p>
