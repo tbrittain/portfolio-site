@@ -32,7 +32,7 @@ function About (): JSX.Element {
         <h2>about</h2>
         <hr />
         <p>
-          My name is Trey Brittain and I am a Junior Software Developer at Entrance Consulting in Houston, Texas.
+          My name is Trey Brittain and I am a Junior Software Consultant at Entrance Consulting in Houston, Texas.
           My languages of choice are TypeScript/JavaScript and Python, but I also have some experience working
           with Go, C#, and R.
         </p>
