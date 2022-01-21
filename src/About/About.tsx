@@ -59,9 +59,8 @@ function About (): JSX.Element {
             During my undergraduate, my work in research laboratories focusing in bioinformatics led to me discovering a passion for programming.
           </p>
           <p>
-            For frontend development, I primarily use React and Svelte (but I am also interested in working with other frameworks such as Vue).
-            For backend development, I have experience working with Express, but I am progressively learning backend frameworks for Go and ASP.NET.
-            Using Express, I have created both traditional REST APIs as well as GraphQL APIs using Apollo GraphQL.
+            For frontend development, I primarily use React, but I am also interested in working with other frameworks such as Vue, Next.js, and Svelte.
+            For backend development, I have experience working with Express, Koa, and Apollo GraphQL.
           </p>
           <p>
             In my free time, I enjoy listening to and thinking about music, cycling, following baseball (and sabermetrics),
