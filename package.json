@@ -9,7 +9,6 @@
     "@types/react": "^17.0.18",
     "@types/react-dom": "^17.0.9",
     "i": "^0.3.6",
-    "node-fetch": "^2.6.1",
     "npm": "^8.5.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -25,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "npx ts-standard --fix"
+    "format": "npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "ts-standard": "^10.0.0"
+    "prettier": "^2.6.1"
   }
 }
