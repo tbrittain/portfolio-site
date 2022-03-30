@@ -3,15 +3,15 @@ import awsLogo from '../Assets/Projects/awslogo.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
-function ProjectHackathon (): JSX.Element {
+function ProjectHackathon(): JSX.Element {
   const hackathonSkills = [Skill.aws, Skill.python]
   return (
     <Project
-      name='AWS Lex Chatbot'
+      name="AWS Lex Chatbot"
       image={awsLogo}
-      imageAlt='AWS logo'
+      imageAlt="AWS logo"
       skills={hackathonSkills}
-      link='https://github.com/jennyphvn/bot1'
+      link="https://github.com/jennyphvn/bot1"
     >
       <div>
         <p>

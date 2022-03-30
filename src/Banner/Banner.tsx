@@ -29,7 +29,7 @@ export enum Skill {
   serverless = 'serverless',
   sqlite = 'sqlite',
   svelte = 'svelte',
-  typescript = 'typescript'
+  typescript = 'typescript',
 }
 
 interface BannerProps {
@@ -43,7 +43,7 @@ interface BannerContent {
   color?: string
 }
 
-function Banner (props: BannerProps): JSX.Element {
+function Banner(props: BannerProps): JSX.Element {
   const { skill } = props
   const content: BannerContent = {}
 
@@ -121,19 +121,9 @@ function Banner (props: BannerProps): JSX.Element {
   }
 
   return (
-    <div
-      className='banner'
-    >
-      <img
-        className='banner-icon'
-        src={content.image}
-        alt={content.alt}
-      />
-      <p
-        className='banner-text'
-      >
-        {content.name}
-      </p>
+    <div className="banner">
+      <img className="banner-icon" src={content.image} alt={content.alt} />
+      <p className="banner-text">{content.name}</p>
     </div>
   )
 }

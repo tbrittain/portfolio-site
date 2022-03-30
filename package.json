@@ -5,18 +5,17 @@
   "homepage": "https://tbrittain.com/",
   "dependencies": {
     "@kunukn/react-collapse": "^2.2.9",
-    "@types/node": "^12.20.19",
-    "@types/react": "^17.0.18",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.9",
     "i": "^0.3.6",
-    "node-fetch": "^2.6.1",
-    "npm": "^7.20.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-responsive-carousel": "^3.2.20",
-    "react-scripts": "4.0.3",
+    "npm": "^8.5.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-scripts": "^5.0.0",
     "react-transition-group": "^4.4.2",
-    "sass": "^1.37.5",
+    "sass": "^1.49.10",
     "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
   },
@@ -25,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "npx ts-standard --fix"
+    "format": "npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "ts-standard": "^10.0.0"
+    "prettier": "^2.6.1"
   }
 }

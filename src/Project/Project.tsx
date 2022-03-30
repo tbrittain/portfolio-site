@@ -15,62 +15,34 @@ interface ProjectProps {
   link?: string
 }
 
-function Project (props: ProjectProps) {
+function Project(props: ProjectProps) {
   const [open, setOpen] = useState(false)
   const { name, image, imageAlt, skills, children } = props
 
   return (
-    <div
-      className='project-container'
-    >
-      <div
-        className='project-details'
-      >
-        <img
-          className='project-image'
-          src={image}
-          alt={imageAlt}
-        />
-        <h3
-          className='project-title'
-        >
-          {name}
-        </h3>
-        <button
-          className='project-expand'
-          onClick={() => setOpen(!open)}
-        >
+    <div className="project-container">
+      <div className="project-details">
+        <img className="project-image" src={image} alt={imageAlt} />
+        <h3 className="project-title">{name}</h3>
+        <button className="project-expand" onClick={() => setOpen(!open)}>
           {open ? '–' : '+'}
         </button>
       </div>
-      <Collapse
-        isOpen={open}
-      >
+      <Collapse isOpen={open}>
         <>
-          <div className='project-info'>
-            {children}
-          </div>
-          {props.link &&
-            <div
-              className='project-link'
-            >
-              <a
-                href={props.link}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+          <div className="project-info">{children}</div>
+          {props.link && (
+            <div className="project-link">
+              <a href={props.link} target="_blank" rel="noopener noreferrer">
                 View source on GitHub ↗
               </a>
-            </div>}
+            </div>
+          )}
         </>
       </Collapse>
-      <div
-        className='project-skills'
-      >
-        {skills.map(skill => (
-          <Banner
-            skill={Skill[skill]}
-          />
+      <div className="project-skills">
+        {skills.map((skill) => (
+          <Banner skill={Skill[skill]} />
         ))}
       </div>
     </div>

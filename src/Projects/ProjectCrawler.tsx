@@ -3,18 +3,15 @@ import crawlerLogo from '../Assets/Projects/crawler.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
-function ProjectCrawler () {
-  const crawlerSkills = [
-    Skill.python,
-    Skill.selenium
-  ]
+function ProjectCrawler() {
+  const crawlerSkills = [Skill.python, Skill.selenium]
   return (
     <Project
-      name='Newegg Crawler'
+      name="Newegg Crawler"
       image={crawlerLogo}
-      imageAlt='Graphics card'
+      imageAlt="Graphics card"
       skills={crawlerSkills}
-      link='https://github.com/tbrittain/newegg-crawler'
+      link="https://github.com/tbrittain/newegg-crawler"
     >
       <div>
         <p />
