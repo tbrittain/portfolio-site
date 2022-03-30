@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react'
 
 // TODO: https://www.robinwieruch.de/react-intersection-observer-api
 
-function ScrollProgressBar () {
+function ScrollProgressBar() {
   const [scrollPosition, setScrollPosition] = useState(window.pageYOffset)
   // const [maxScrollPosition, setMaxScrollPosition] = useState(window.scrollMaxY)
   const handleScroll = useCallback(() => {
@@ -18,10 +18,7 @@ function ScrollProgressBar () {
     }
   }, [handleScroll])
 
-  return (
-    <>
-    </>
-  )
+  return <></>
 }
 
 export default ScrollProgressBar

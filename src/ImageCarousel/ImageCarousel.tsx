@@ -11,7 +11,7 @@ interface ImageDetails {
 
 export type ImageCarouselProps = ImageDetails[]
 
-function ImageCarousel (props: { images: ImageCarouselProps }) {
+function ImageCarousel(props: { images: ImageCarouselProps }) {
   return (
     <Carousel
       autoPlay
@@ -22,33 +22,21 @@ function ImageCarousel (props: { images: ImageCarouselProps }) {
       showIndicators={false}
       showStatus={false}
     >
-      {
-        props.images.map(image => (
-          <div
-            className='carousel-container'
-          >
-            <img
-              src={image.img}
-              alt={image.alt}
-            />
-            {
-              image.label &&
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'center'
-                  }}
-                >
-                  <p
-                    className='image-label'
-                  >
-                    {image.label}
-                  </p>
-                </div>
-            }
-          </div>
-        ))
-      }
+      {props.images.map((image) => (
+        <div className="carousel-container">
+          <img src={image.img} alt={image.alt} />
+          {image.label && (
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+              }}
+            >
+              <p className="image-label">{image.label}</p>
+            </div>
+          )}
+        </div>
+      ))}
     </Carousel>
   )
 }

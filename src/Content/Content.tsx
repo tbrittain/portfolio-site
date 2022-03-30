@@ -5,39 +5,22 @@ import './Content.scss'
 import Contact from '../Contact/Contact'
 import ScrollProgressBar from '../ScrollProgressBar/ScrollProgressBar'
 
-function Content () {
+function Content() {
   return (
-    <main
-      className='content-container'
-    >
+    <main className="content-container">
       <ScrollProgressBar />
-      <section
-        className='about'
-        id='about'
-      >
-        <div
-          className='section-container'
-        >
+      <section className="about" id="about">
+        <div className="section-container">
           <About />
         </div>
       </section>
-      <section
-        className='projects'
-        id='projects'
-      >
-        <div
-          className='section-container'
-        >
+      <section className="projects" id="projects">
+        <div className="section-container">
           <Projects />
         </div>
       </section>
-      <section
-        className='contact'
-        id='contact'
-      >
-        <div
-          className='section-container'
-        >
+      <section className="contact" id="contact">
+        <div className="section-container">
           <Contact />
         </div>
       </section>
