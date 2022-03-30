@@ -5,7 +5,7 @@
   "homepage": "https://tbrittain.com/",
   "dependencies": {
     "@kunukn/react-collapse": "^2.2.9",
-    "@types/node": "^12.20.19",
+    "@types/node": "^17.0.23",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.9",
     "i": "^0.3.6",
