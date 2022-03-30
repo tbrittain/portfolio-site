@@ -1,5 +1,5 @@
 import React from 'react'
-import bingeableLogo from '../Assets/bingeable.png'
+import bingeableLogo from '../Assets/Projects/bingeable.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 

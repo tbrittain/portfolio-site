@@ -1,5 +1,5 @@
 import React from 'react'
-import owlLogo from '../Assets/owl.png'
+import owlLogo from '../Assets/Projects/owl.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 

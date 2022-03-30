@@ -5,6 +5,7 @@ import electronIcon from '../Assets/DarkIcons/electron.png'
 import googleCloudIcon from '../Assets/DarkIcons/googlecloud.png'
 import graphQLIcon from '../Assets/DarkIcons/graphql.png'
 import javascriptIcon from '../Assets/DarkIcons/javascript.png'
+import kubernetesIcon from '../Assets/DarkIcons/kubernetes.png'
 import postgresIcon from '../Assets/DarkIcons/postgres.png'
 import pythonIcon from '../Assets/DarkIcons/python.png'
 import seleniumIcon from '../Assets/DarkIcons/selenium.png'
@@ -21,6 +22,7 @@ export enum Skill {
   googlecloud = 'googlecloud',
   graphql = 'graphql',
   javascript = 'javascript',
+  kubernetes = 'kubernetes',
   postgres = 'postgres',
   python = 'python',
   selenium = 'selenium',
@@ -75,6 +77,11 @@ function Banner (props: BannerProps): JSX.Element {
       content.name = 'JavaScript'
       content.image = javascriptIcon
       content.alt = 'JavaScript icon'
+      break
+    case 'kubernetes':
+      content.name = 'Kubernetes'
+      content.image = kubernetesIcon
+      content.alt = 'Kubernetes icon'
       break
     case 'postgres':
       content.name = 'PostgreSQL'

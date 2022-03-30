@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './About.scss'
 import Collapse from '@kunukn/react-collapse'
 import ImageCarousel, { ImageCarouselProps } from '../ImageCarousel/ImageCarousel'
-import image1 from '../Assets/1.jpg'
-import image2 from '../Assets/2.jpg'
-import image4 from '../Assets/4.jpg'
+import image1 from '../Assets/About/1.jpg'
+import image2 from '../Assets/About/2.jpg'
+import image4 from '../Assets/About/4.jpg'
 
 const aboutImages: ImageCarouselProps = [
   {

@@ -1,5 +1,5 @@
 import React from 'react'
-import vaultBotLogo from '../Assets/vaultbot.png'
+import vaultBotLogo from '../Assets/Projects/vaultbot.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import awsLogo from '../Assets/awslogo.png'
+import awsLogo from '../Assets/Projects/awslogo.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 

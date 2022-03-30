@@ -1,5 +1,5 @@
 import React from 'react'
-import smb3appLogo from '../Assets/smb3app.png'
+import smb3appLogo from '../Assets/Projects/smb3app.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
