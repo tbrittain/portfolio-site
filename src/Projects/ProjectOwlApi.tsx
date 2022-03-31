@@ -1,7 +1,7 @@
 import React from 'react'
 import owlLogo from '../Assets/Projects/owl.png'
-import Project from '../Project/Project'
-import { Skill } from '../Banner/Banner'
+import Project from '../Project'
+import { Skill } from '../Banner'
 
 function ProjectOwlApi() {
   const owlApiSkills = [

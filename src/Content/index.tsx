@@ -1,9 +1,9 @@
 import React from 'react'
-import About from '../About/About'
-import Projects from '../Projects/Projects'
+import About from '../About'
+import Projects from '../Projects'
 import './Content.scss'
-import Contact from '../Contact/Contact'
-import ScrollProgressBar from '../ScrollProgressBar/ScrollProgressBar'
+import Contact from '../Contact'
+import ScrollProgressBar from '../ScrollProgressBar'
 
 function Content() {
   return (

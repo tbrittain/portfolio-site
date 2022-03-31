@@ -1,6 +1,6 @@
 import React from 'react'
-import Content from '../Content/Content'
-import Nav from '../Nav/Nav'
+import Content from '../Content'
+import Nav from '../Nav'
 import './App.scss'
 
 function App() {

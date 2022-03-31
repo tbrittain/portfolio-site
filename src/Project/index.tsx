@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Banner, { Skill } from '../Banner/Banner'
+import Banner, { Skill } from '../Banner'
 
 import Collapse from '@kunukn/react-collapse'
 import './Project.scss'
