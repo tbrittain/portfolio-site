@@ -9,6 +9,7 @@ function ProjectVaultBot() {
     Skill.googlecloud,
     Skill.graphql,
     Skill.javascript,
+    Skill.kubernetes,
     Skill.postgres,
     Skill.python,
     Skill.typescript,

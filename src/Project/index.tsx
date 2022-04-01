@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Banner, { Skill } from '../Banner'
-
 import Collapse from '@kunukn/react-collapse'
 import './Project.scss'
+import LanguageCompositionBar from '../LanguageCompositionBar'
 
 type Skills = Skill[]
 
@@ -17,7 +17,7 @@ interface ProjectProps {
 
 function Project(props: ProjectProps) {
   const [open, setOpen] = useState(false)
-  const { name, image, imageAlt, skills, children } = props
+  const { name, image, imageAlt, skills, children, link } = props
 
   return (
     <div className="project-container">
@@ -31,9 +31,9 @@ function Project(props: ProjectProps) {
       <Collapse isOpen={open}>
         <>
           <div className="project-info">{children}</div>
-          {props.link && (
+          {link && (
             <div className="project-link">
-              <a href={props.link} target="_blank" rel="noopener noreferrer">
+              <a href={link} target="_blank" rel="noopener noreferrer">
                 View source on GitHub ↗
               </a>
             </div>
@@ -45,6 +45,11 @@ function Project(props: ProjectProps) {
           <Banner skill={Skill[skill]} />
         ))}
       </div>
+      {link && (
+        <div className="project-languages">
+          <LanguageCompositionBar gitRepo={`${link}.git`} />
+        </div>
+      )}
     </div>
   )
 }
