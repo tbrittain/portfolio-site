@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Banner, { Skill } from '../Banner'
+import Banner, { Skill } from '../Elements/Banner'
 import Collapse from '@kunukn/react-collapse'
 import './Project.scss'
-import LanguageCompositionBar from '../LanguageCompositionBar'
+import LanguageCompositionBar from '../Elements/LanguageCompositionBar'
 
 type Skills = Skill[]
 
@@ -42,7 +42,7 @@ function Project(props: ProjectProps) {
       </Collapse>
       <div className="project-skills">
         {skills.map((skill) => (
-          <Banner skill={Skill[skill]} />
+          <Banner skill={Skill[skill]} key={`${name}-${skill}`}/>
         ))}
       </div>
       {link && (

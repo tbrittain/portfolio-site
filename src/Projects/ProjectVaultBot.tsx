@@ -1,7 +1,7 @@
 import React from 'react'
 import vaultBotLogo from '../Assets/Projects/vaultbot.png'
 import Project from '../Project'
-import { Skill } from '../Banner'
+import { Skill } from '../Elements/Banner'
 
 function ProjectVaultBot() {
   const vaultBotSkills = [

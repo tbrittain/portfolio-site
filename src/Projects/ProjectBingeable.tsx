@@ -1,7 +1,7 @@
 import React from 'react'
 import bingeableLogo from '../Assets/Projects/bingeable.png'
 import Project from '../Project'
-import { Skill } from '../Banner'
+import { Skill } from '../Elements/Banner'
 
 function ProjectBingeable(): JSX.Element {
   const bingeableSkills = [

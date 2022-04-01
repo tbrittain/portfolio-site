@@ -22,8 +22,8 @@ function ImageCarousel(props: { images: ImageCarouselProps }) {
       showIndicators={false}
       showStatus={false}
     >
-      {props.images.map((image) => (
-        <div className="carousel-container">
+      {props.images.map((image, index) => (
+        <div className="carousel-container" key={`image-carousel-${index}`}>
           <img src={image.img} alt={image.alt} />
           {image.label && (
             <div

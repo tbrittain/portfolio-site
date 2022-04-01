@@ -3,7 +3,7 @@ import About from '../About'
 import Projects from '../Projects'
 import './Content.scss'
 import Contact from '../Contact'
-import ScrollProgressBar from '../ScrollProgressBar'
+import ScrollProgressBar from '../Elements/ScrollProgressBar'
 
 function Content() {
   return (

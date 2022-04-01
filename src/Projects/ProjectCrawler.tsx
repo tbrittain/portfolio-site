@@ -1,7 +1,7 @@
 import React from 'react'
 import crawlerLogo from '../Assets/Projects/crawler.png'
 import Project from '../Project'
-import { Skill } from '../Banner'
+import { Skill } from '../Elements/Banner'
 
 function ProjectCrawler() {
   const crawlerSkills = [Skill.python, Skill.selenium]

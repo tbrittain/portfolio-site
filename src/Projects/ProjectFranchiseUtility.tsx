@@ -1,7 +1,7 @@
 import React from 'react'
 import smb3appLogo from '../Assets/Projects/smb3app.png'
 import Project from '../Project'
-import { Skill } from '../Banner'
+import { Skill } from '../Elements/Banner'
 
 function FranchiseUtility(): JSX.Element {
   const utilitySkills = [
