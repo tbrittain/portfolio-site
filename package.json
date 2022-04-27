@@ -10,7 +10,7 @@
     "@types/react-dom": "^18.0.2",
     "i": "^0.3.7",
     "npm": "^8.7.0",
-    "react": "^18.0.0",
+    "react": "^18.1.0",
     "react-dom": "^18.0.0",
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "^5.0.1",
