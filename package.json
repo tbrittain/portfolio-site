@@ -6,7 +6,7 @@
   "dependencies": {
     "@kunukn/react-collapse": "^2.2.9",
     "i": "^0.3.7",
-    "npm": "^8.8.0",
+    "npm": "^8.9.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-responsive-carousel": "^3.2.23",
