@@ -3,7 +3,7 @@ import bingeableLogo from '../Assets/bingeable.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
-function ProjectBingeable(): JSX.Element {
+function ProjectBingeable() {
   const bingeableSkills = [
     Skill.docker,
     Skill.googlecloud,

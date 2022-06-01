@@ -26,7 +26,7 @@ const aboutImages: ImageCarouselProps = [
   },
 ]
 
-function About(): JSX.Element {
+function About() {
   const [open, setOpen] = useState(false)
   return (
     <>

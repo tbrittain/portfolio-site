@@ -3,7 +3,7 @@ import awsLogo from '../Assets/awslogo.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
-function ProjectHackathon(): JSX.Element {
+function ProjectHackathon() {
   const hackathonSkills = [Skill.aws, Skill.python]
   return (
     <Project

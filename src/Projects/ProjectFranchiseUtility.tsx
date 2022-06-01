@@ -3,7 +3,7 @@ import smb3appLogo from '../Assets/smb3app.png'
 import Project from '../Project/Project'
 import { Skill } from '../Banner/Banner'
 
-function FranchiseUtility(): JSX.Element {
+function FranchiseUtility() {
   const utilitySkills = [
     Skill.electron,
     Skill.sqlite,

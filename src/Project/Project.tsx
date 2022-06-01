@@ -10,7 +10,7 @@ interface ProjectProps {
   name: string
   image: string
   imageAlt: string
-  children: JSX.Element
+  children: any
   skills: Skills
   link?: string
 }

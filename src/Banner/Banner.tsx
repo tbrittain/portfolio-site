@@ -41,7 +41,7 @@ interface BannerContent {
   color?: string
 }
 
-function Banner(props: BannerProps): JSX.Element {
+function Banner(props: BannerProps) {
   const { skill } = props
   const content: BannerContent = {}
 

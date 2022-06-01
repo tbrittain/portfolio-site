@@ -3,7 +3,7 @@ import ProjectVaultBot from './ProjectVaultBot'
 import ProjectHackathon from './ProjectHackathon'
 import './Projects.scss'
 
-function Projects(): JSX.Element {
+function Projects() {
   return (
     <>
       <h2>projects</h2>
