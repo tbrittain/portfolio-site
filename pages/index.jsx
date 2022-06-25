@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { styled } from '../stitches.config'
-import StitchesLogo from '../components/StitchesLogo'
 
 const Box = styled('div', {})
 
@@ -41,7 +40,6 @@ export default function Home() {
         <title>Use Stitches with Next.js</title>
       </Head>
       <Container size={{ '@initial': '1', '@bp1': '2' }}>
-        <StitchesLogo />
         <Text as="h1">Hello, from Stitches.</Text>
         <Text>
           For full documentation, visit{' '}
