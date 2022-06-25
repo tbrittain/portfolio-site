@@ -53,7 +53,8 @@ export const {
       6: '21px',
     },
     fonts: {
-      system: 'system-ui',
+      sansSerif: 'IBM Plex Sans',
+      mono: 'IBM Plex Mono'
     },
   },
   utils: {
