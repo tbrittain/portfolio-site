@@ -45,8 +45,8 @@ export const { getCssText, styled } = createStitches({
       6: "21px",
     },
     fonts: {
-      sansSerif: "IBM Plex Sans",
-      mono: "IBM Plex Mono",
+      sansSerif: '"IBM Plex Sans", sans-serif',
+      mono: '"IBM Plex Mono", monospace',
     },
     fontWeights: {
       light: "300",
