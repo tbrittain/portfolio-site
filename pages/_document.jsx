@@ -14,7 +14,7 @@ export default class Document extends NextDocument {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=IBM+Plex+Sans:ital,wght@0,200;0,400;1,200;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap"
             rel="stylesheet"
           />
           <style
