@@ -1,4 +1,4 @@
-import { Box, Container, Link, Text } from "../components"
+import { Box, Container, Link, Text } from "../elements"
 import SwipeableViews from "react-swipeable-views"
 import { autoPlay } from "react-swipeable-views-utils"
 import { globalStyles } from "../stitches.config"
