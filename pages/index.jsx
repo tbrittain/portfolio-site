@@ -2,6 +2,7 @@ import { Box, Container, Link, Text } from "../elements"
 import SwipeableViews from "react-swipeable-views"
 import { autoPlay } from "react-swipeable-views-utils"
 import { globalStyles } from "../stitches.config"
+import Head from "next/head"
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
@@ -26,30 +27,35 @@ export default function Home() {
 	globalStyles()
 
 	return (
-		<Box css={{ paddingY: "$6" }}>
-			<Container size={{ "@initial": "1", "@bp1": "2" }}>
-				<AutoPlaySwipeableViews enableMouseEvents interval={10000}>
-					<div style={Object.assign({}, styles.slide, styles.slide1)}>
-						<Text as="h2" css={{ fontWeight: "$light" }}>
-							slide n°1
-						</Text>
-						<Link>https://github.com/tbrittain</Link>
-					</div>
-					<div style={Object.assign({}, styles.slide, styles.slide2)}>
-						<Text as="h2" css={{ fontWeight: "$light" }}>
-							slide n°2
-						</Text>
-						<Link>https://github.com/tbrittain</Link>
-					</div>
-					<div style={Object.assign({}, styles.slide, styles.slide3)}>
-						<Text as="h2" css={{ fontWeight: "$light" }}>
-							slide n°3
-						</Text>
-						<Link>https://github.com/tbrittain</Link>
-					</div>
-				</AutoPlaySwipeableViews>
-			</Container>
-		</Box>
+		<>
+			<Head>
+				<title>Trey Brittain - Portfolio</title>
+			</Head>
+			<Box css={{ paddingY: "$6" }}>
+				<Container size={{ "@initial": "1", "@bp1": "2" }}>
+					<AutoPlaySwipeableViews enableMouseEvents interval={10000}>
+						<div style={Object.assign({}, styles.slide, styles.slide1)}>
+							<Text as="h2" css={{ fontWeight: "$light" }}>
+								slide n°1
+							</Text>
+							<Link href="https://github.com/tbrittain">Github</Link>
+						</div>
+						<div style={Object.assign({}, styles.slide, styles.slide2)}>
+							<Text as="h2" css={{ fontWeight: "$light" }}>
+								slide n°2
+							</Text>
+							<Link href="https://github.com/tbrittain">Github</Link>
+						</div>
+						<div style={Object.assign({}, styles.slide, styles.slide3)}>
+							<Text as="h2" css={{ fontWeight: "$light" }}>
+								slide n°3
+							</Text>
+							<Link href="https://github.com/tbrittain">Github</Link>
+						</div>
+					</AutoPlaySwipeableViews>
+				</Container>
+			</Box>
+		</>
 	)
 }
 

@@ -21,7 +21,6 @@ export default class Document extends NextDocument {
 						id="stitches"
 						dangerouslySetInnerHTML={{ __html: getCssText() }}
 					/>
-					<title>Trey Brittain - Portfolio</title>
 				</Head>
 				<body>
 					<Main />
